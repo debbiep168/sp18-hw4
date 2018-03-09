@@ -1,0 +1,46 @@
+<h1> All Models</h1>
+
+<h3>Todo List</h3>
+<table>
+    <tr>
+        <td><h4>Tasks</h4></td>
+        <td><h4>Done</h4></td>
+    </tr>
+    <%@todos.each do |t| %>
+        <tr>
+            <td><%= t.taskName%></td>
+            <td><%= t.done%></td>
+        </tr>
+    <%end%>
+</table>
+
+<h3>Cats</h3>
+
+<table>
+    <tr>
+      <td><h4>Name</h4></td>
+    </tr>
+    <%@cats.each do |c| %>
+        <tr>
+            <td><%= c.name%></td>
+        </tr>
+    <%end%>
+</table>
+
+<h3>Users</h3>
+
+
+<table>
+    <tr>
+        <td><h4>Username</h4></td>
+        <td><h4>Email</h4></td>
+        <td><h4>Age</h4></td>
+    </tr>
+    <%@users.each do |u| %>
+        <tr>
+            <td><%= u.username%></td>
+            <td><%= u.email%></td>
+            <td><%= u.age%></td>
+        </tr>
+    <%end%>
+</table>

@@ -1,0 +1,11 @@
+<h1>Create New Todo</h1>
+
+<%= form_for @todo, url: create_todo_path do |f| %>
+  <%= f.label "Task" %>:
+  <%= f.text_field :taskName %><br/>
+
+  <%= f.label "Status" %>:
+  <%= f.check_box :done %><br/>
+
+  <%= f.submit %>
+<% end %>
